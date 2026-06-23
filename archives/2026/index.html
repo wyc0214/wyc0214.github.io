@@ -145,7 +145,49 @@
       Souffler&#39;s blog | or die
     
   </title>
-<meta name="generator" content="Hexo 5.4.2"></head>
+<!-- hexo injector head_end start -->
+<style>
+  /* 淺色模式的預設顏色變數 */
+  :root {
+    --alert-info-bg: #d9edf7; --alert-info-text: #31708f;
+    --alert-warning-bg: #fcf8e3; --alert-warning-text: #8a6d3b;
+    --alert-danger-bg: #f2dede; --alert-danger-text: #a94442;
+    --alert-success-bg: #dff0d8; --alert-success-text: #3c763d;
+  }
+  
+  /* 深色模式變數 (涵蓋系統預設深色，以及主題觸發的 dark class) */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --alert-info-bg: #1a3c4f; --alert-info-text: #81c2e6;
+      --alert-warning-bg: #4f4221; --alert-warning-text: #e6c581;
+      --alert-danger-bg: #4f2222; --alert-danger-text: #e68181;
+      --alert-success-bg: #224f22; --alert-success-text: #81e681;
+    }
+  }
+  
+  /* 強制覆蓋：當主題切換按鈕被按下時的狀態 */
+  body.dark, html.dark, body.dark-mode, [data-theme="dark"] {
+    --alert-info-bg: #1a3c4f; --alert-info-text: #81c2e6;
+    --alert-warning-bg: #4f4221; --alert-warning-text: #e6c581;
+    --alert-danger-bg: #4f2222; --alert-danger-text: #e68181;
+    --alert-success-bg: #224f22; --alert-success-text: #81e681;
+  }
+
+  /* 基礎版型 */
+  .hackmd-alert {
+    border-left: 5px solid; 
+    border-radius: 4px; 
+    padding: 15px; 
+    margin: 20px 0;
+  }
+  
+  /* 套用變數 */
+  .hackmd-info { background-color: var(--alert-info-bg); color: var(--alert-info-text); border-color: var(--alert-info-text); }
+  .hackmd-warning { background-color: var(--alert-warning-bg); color: var(--alert-warning-text); border-color: var(--alert-warning-text); }
+  .hackmd-danger { background-color: var(--alert-danger-bg); color: var(--alert-danger-text); border-color: var(--alert-danger-text); }
+  .hackmd-success { background-color: var(--alert-success-bg); color: var(--alert-success-text); border-color: var(--alert-success-text); }
+</style>
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <!-- hack iOS CSS :active style -->
@@ -269,9 +311,9 @@
           
           
           <li>
-            <a href="/archive/">
+            <a href="/tags/">
               
-              ARCHIVES
+              TAGS
               
               
             </a>
@@ -280,9 +322,9 @@
           
           
           <li>
-            <a href="/tags/">
+            <a href="/archive/">
               
-              TAGS
+              ARCHIVES
               
               
             </a>
@@ -486,11 +528,11 @@
           <li>
             06-23
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/freshman1/" style="color: #0085a1">
+            <a href="/tw/freshman1/" style="color: #0085a1">
               <span>
                 臺大資工大一上修課心得
                 
-                -- cn
+                -- tw
                 
               </span>
             </a>
@@ -560,6 +602,10 @@
   <div class="tags">
     
     
+    <a href="/tags/#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife" rel="1">Hexo-Theme-LiveMyLife</a>
+    
+    
+    
     <a href="/tags/#台大資工" title="台大資工" rel="1">台大資工</a>
     
     
@@ -577,10 +623,6 @@
     
     
     <a href="/tags/#臺大資工" title="臺大資工" rel="1">臺大資工</a>
-    
-    
-    
-    <a href="/tags/#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife" rel="1">Hexo-Theme-LiveMyLife</a>
     
     
   </div>
@@ -661,7 +703,7 @@
 <div class="widget">
   <ul>
     
-    <a href="../../cn/freshman1/">
+    <a href="../../tw/freshman1/">
       <li>臺大資工大一上修課心得</li>
     </a>
     
@@ -705,12 +747,12 @@
 <div class="widget">
   <ul>
     
-    <a href="/categories/#修課心得">
-      <li>修課心得</li>
-    </a>
-    
     <a href="/categories/#Hexo-Theme-LiveMyLife">
       <li>Hexo-Theme-LiveMyLife</li>
+    </a>
+    
+    <a href="/categories/#修課心得">
+      <li>修課心得</li>
     </a>
     
   </ul>
