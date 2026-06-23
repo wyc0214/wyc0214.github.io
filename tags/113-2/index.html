@@ -118,11 +118,6 @@
     
 
     
-      <!-- gitalk start -->
-      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
-      <link rel="stylesheet" href="/css/gitalk.css"/>
-      <!-- gitalk end -->
-    
   
 
   <!-- Custom Fonts -->
@@ -142,12 +137,11 @@
   <link rel="canonical" href="http://yoursite-url/tags/113-2/">
   <title>
     
-      Souffler&#39;s blog | or die
+      Souffler&#39;s blog
     
   </title>
 <!-- hexo injector head_end start -->
 <style>
-  /* 淺色模式的預設顏色變數 */
   :root {
     --alert-info-bg: #d9edf7; --alert-info-text: #31708f;
     --alert-warning-bg: #fcf8e3; --alert-warning-text: #8a6d3b;
@@ -155,7 +149,6 @@
     --alert-success-bg: #dff0d8; --alert-success-text: #3c763d;
   }
   
-  /* 深色模式變數 (系統層級) */
   @media (prefers-color-scheme: dark) {
     :root {
       --alert-info-bg: #1a3c4f; --alert-info-text: #81c2e6;
@@ -165,7 +158,6 @@
     }
   }
   
-  /* 深色模式變數 (主題按鈕觸發層級：盡可能捕捉所有常見的暗黑模式 class) */
   html.dark, body.dark, html[data-theme="dark"], body[data-theme="dark"], body.night, body.dark-mode {
     --alert-info-bg: #1a3c4f; --alert-info-text: #81c2e6;
     --alert-warning-bg: #3f351a; --alert-warning-text: #e6c581;
@@ -173,7 +165,6 @@
     --alert-success-bg: #1e3b1e; --alert-success-text: #81e681;
   }
 
-  /* 基礎版型，加上 !important 避免被主題的通用樣式干擾 */
   .hackmd-alert {
     border-left: 5px solid !important; 
     border-radius: 4px !important; 
@@ -181,12 +172,10 @@
     margin: 20px 0 !important;
   }
   
-  /* 關鍵修復：強制內部的段落與列表文字「繼承」提示框的顏色，不准變成全白 */
   .hackmd-alert p, .hackmd-alert ul, .hackmd-alert li {
     color: inherit !important;
   }
   
-  /* 套用變數並強制執行 */
   .hackmd-info { background-color: var(--alert-info-bg) !important; color: var(--alert-info-text) !important; border-color: var(--alert-info-text) !important; }
   .hackmd-warning { background-color: var(--alert-warning-bg) !important; color: var(--alert-warning-text) !important; border-color: var(--alert-warning-text) !important; }
   .hackmd-danger { background-color: var(--alert-danger-bg) !important; color: var(--alert-danger-text) !important; border-color: var(--alert-danger-text) !important; }
@@ -305,9 +294,9 @@
           
           
           <li>
-            <a href="/tags/">
+            <a href="/archive/">
               
-              TAGS
+              ARCHIVES
               
               
             </a>
@@ -327,9 +316,9 @@
           
           
           <li>
-            <a href="/archive/">
+            <a href="/tags/">
               
-              ARCHIVES
+              TAGS
               
               
             </a>
@@ -1288,5 +1277,20 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
 
 
 		
-	</body>
+	<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
 </html>
