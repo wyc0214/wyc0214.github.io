@@ -139,7 +139,7 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://yoursite-url/archives/2026/06/">
+  <link rel="canonical" href="http://yoursite-url/archives/2026/01/">
   <title>
     
       Souffler&#39;s blog | or die
@@ -155,37 +155,42 @@
     --alert-success-bg: #dff0d8; --alert-success-text: #3c763d;
   }
   
-  /* 深色模式變數 (涵蓋系統預設深色，以及主題觸發的 dark class) */
+  /* 深色模式變數 (系統層級) */
   @media (prefers-color-scheme: dark) {
     :root {
       --alert-info-bg: #1a3c4f; --alert-info-text: #81c2e6;
-      --alert-warning-bg: #4f4221; --alert-warning-text: #e6c581;
-      --alert-danger-bg: #4f2222; --alert-danger-text: #e68181;
-      --alert-success-bg: #224f22; --alert-success-text: #81e681;
+      --alert-warning-bg: #3f351a; --alert-warning-text: #e6c581;
+      --alert-danger-bg: #401d1d; --alert-danger-text: #e68181;
+      --alert-success-bg: #1e3b1e; --alert-success-text: #81e681;
     }
   }
   
-  /* 強制覆蓋：當主題切換按鈕被按下時的狀態 */
-  body.dark, html.dark, body.dark-mode, [data-theme="dark"] {
+  /* 深色模式變數 (主題按鈕觸發層級：盡可能捕捉所有常見的暗黑模式 class) */
+  html.dark, body.dark, html[data-theme="dark"], body[data-theme="dark"], body.night, body.dark-mode {
     --alert-info-bg: #1a3c4f; --alert-info-text: #81c2e6;
-    --alert-warning-bg: #4f4221; --alert-warning-text: #e6c581;
-    --alert-danger-bg: #4f2222; --alert-danger-text: #e68181;
-    --alert-success-bg: #224f22; --alert-success-text: #81e681;
+    --alert-warning-bg: #3f351a; --alert-warning-text: #e6c581;
+    --alert-danger-bg: #401d1d; --alert-danger-text: #e68181;
+    --alert-success-bg: #1e3b1e; --alert-success-text: #81e681;
   }
 
-  /* 基礎版型 */
+  /* 基礎版型，加上 !important 避免被主題的通用樣式干擾 */
   .hackmd-alert {
-    border-left: 5px solid; 
-    border-radius: 4px; 
-    padding: 15px; 
-    margin: 20px 0;
+    border-left: 5px solid !important; 
+    border-radius: 4px !important; 
+    padding: 15px !important; 
+    margin: 20px 0 !important;
   }
   
-  /* 套用變數 */
-  .hackmd-info { background-color: var(--alert-info-bg); color: var(--alert-info-text); border-color: var(--alert-info-text); }
-  .hackmd-warning { background-color: var(--alert-warning-bg); color: var(--alert-warning-text); border-color: var(--alert-warning-text); }
-  .hackmd-danger { background-color: var(--alert-danger-bg); color: var(--alert-danger-text); border-color: var(--alert-danger-text); }
-  .hackmd-success { background-color: var(--alert-success-bg); color: var(--alert-success-text); border-color: var(--alert-success-text); }
+  /* 關鍵修復：強制內部的段落與列表文字「繼承」提示框的顏色，不准變成全白 */
+  .hackmd-alert p, .hackmd-alert ul, .hackmd-alert li {
+    color: inherit !important;
+  }
+  
+  /* 套用變數並強制執行 */
+  .hackmd-info { background-color: var(--alert-info-bg) !important; color: var(--alert-info-text) !important; border-color: var(--alert-info-text) !important; }
+  .hackmd-warning { background-color: var(--alert-warning-bg) !important; color: var(--alert-warning-text) !important; border-color: var(--alert-warning-text) !important; }
+  .hackmd-danger { background-color: var(--alert-danger-bg) !important; color: var(--alert-danger-text) !important; border-color: var(--alert-danger-text) !important; }
+  .hackmd-success { background-color: var(--alert-success-bg) !important; color: var(--alert-success-text) !important; border-color: var(--alert-success-text) !important; }
 </style>
 <!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head>
 
@@ -289,17 +294,6 @@
           
           
           <li>
-            <a href="/about/">
-              
-              ABOUT
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
             <a href="/categories/">
               
               CATEGORIES
@@ -314,6 +308,17 @@
             <a href="/tags/">
               
               TAGS
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/about/">
+              
+              ABOUT
               
               
             </a>
@@ -349,7 +354,7 @@
     <span>
       English
     </span>
-    <select id="lang-select" data-canonical="archives/2026/06/index.html">
+    <select id="lang-select" data-canonical="archives/2026/01/index.html">
       
       
       <option value="en"  selected >
@@ -526,7 +531,20 @@
         <ul>
           
           <li>
-            06-23
+            01-31
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/tw/freshman2/" style="color: #0085a1">
+              <span>
+                臺大資工大一下修課心得
+                
+                -- tw
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            01-31
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
             <a href="/tw/freshman1/" style="color: #0085a1">
               <span>
@@ -602,19 +620,15 @@
   <div class="tags">
     
     
-    <a href="/tags/#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife" rel="1">Hexo-Theme-LiveMyLife</a>
+    <a href="/tags/#台大資工" title="台大資工" rel="2">台大資工</a>
     
     
     
-    <a href="/tags/#台大資工" title="台大資工" rel="1">台大資工</a>
+    <a href="/tags/#NTUCSIE" title="NTUCSIE" rel="2">NTUCSIE</a>
     
     
     
-    <a href="/tags/#NTUCSIE" title="NTUCSIE" rel="1">NTUCSIE</a>
-    
-    
-    
-    <a href="/tags/#修課心得" title="修課心得" rel="1">修課心得</a>
+    <a href="/tags/#修課心得" title="修課心得" rel="2">修課心得</a>
     
     
     
@@ -622,7 +636,15 @@
     
     
     
-    <a href="/tags/#臺大資工" title="臺大資工" rel="1">臺大資工</a>
+    <a href="/tags/#臺大資工" title="臺大資工" rel="2">臺大資工</a>
+    
+    
+    
+    <a href="/tags/#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife" rel="1">Hexo-Theme-LiveMyLife</a>
+    
+    
+    
+    <a href="/tags/#113-2" title="113-2" rel="1">113-2</a>
     
     
   </div>
@@ -707,6 +729,10 @@
       <li>臺大資工大一上修課心得</li>
     </a>
     
+    <a href="../../../tw/freshman2/">
+      <li>臺大資工大一下修課心得</li>
+    </a>
+    
     <a href="../../../en/Hexo-Theme-LiveMyLife/">
       <li>Hexo-Theme-LiveMyLife</li>
     </a>
@@ -735,7 +761,7 @@
 
 <h5><a href="/archives/">archives</a></h5>
 <div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="">June 2026</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../2020/04/">April 2020</a><span class="archive-list-count">1</span></li></ul>
+  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="">January 2026</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../2020/04/">April 2020</a><span class="archive-list-count">1</span></li></ul>
 </div>
 
 
@@ -747,12 +773,12 @@
 <div class="widget">
   <ul>
     
-    <a href="/categories/#Hexo-Theme-LiveMyLife">
-      <li>Hexo-Theme-LiveMyLife</li>
-    </a>
-    
     <a href="/categories/#修課心得">
       <li>修課心得</li>
+    </a>
+    
+    <a href="/categories/#Hexo-Theme-LiveMyLife">
+      <li>Hexo-Theme-LiveMyLife</li>
     </a>
     
   </ul>
@@ -1262,20 +1288,5 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
 
 
 		
-	<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</body>
+	</body>
 </html>
