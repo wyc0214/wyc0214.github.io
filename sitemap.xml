@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://souffler.csie.org/tw/sophomore1/</loc>
+    
+    <lastmod>2026-06-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://souffler.csie.org/about/index.html</loc>
     
     <lastmod>2026-06-24</lastmod>
@@ -50,15 +59,6 @@
     <loc>https://souffler.csie.org/tw/freshman2/</loc>
     
     <lastmod>2026-01-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://souffler.csie.org/en/Hexo-Theme-LiveMyLife/</loc>
-    
-    <lastmod>2020-04-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -125,7 +125,7 @@
   </url>
   
   <url>
-    <loc>https://souffler.csie.org/tags/Hexo-Theme-LiveMyLife/</loc>
+    <loc>https://souffler.csie.org/tags/114-1/</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -135,13 +135,6 @@
   
   <url>
     <loc>https://souffler.csie.org/categories/%E4%BF%AE%E8%AA%B2%E5%BF%83%E5%BE%97/</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://souffler.csie.org/categories/Hexo-Theme-LiveMyLife/</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
