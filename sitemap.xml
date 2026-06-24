@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite-url/tags/index.html</loc>
+    <loc>https://souffler.csie.org/about/index.html</loc>
+    
+    <lastmod>2026-06-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://souffler.csie.org/tags/index.html</loc>
     
     <lastmod>2026-06-23</lastmod>
     
@@ -11,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/categories/index.html</loc>
+    <loc>https://souffler.csie.org/categories/index.html</loc>
     
     <lastmod>2026-06-23</lastmod>
     
@@ -20,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/404.html</loc>
+    <loc>https://souffler.csie.org/404.html</loc>
     
     <lastmod>2026-06-23</lastmod>
     
@@ -29,7 +38,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/tw/freshman1/</loc>
+    <loc>https://souffler.csie.org/tw/freshman1/</loc>
     
     <lastmod>2026-01-30</lastmod>
     
@@ -38,7 +47,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/tw/freshman2/</loc>
+    <loc>https://souffler.csie.org/tw/freshman2/</loc>
     
     <lastmod>2026-01-30</lastmod>
     
@@ -47,7 +56,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/en/Hexo-Theme-LiveMyLife/</loc>
+    <loc>https://souffler.csie.org/en/Hexo-Theme-LiveMyLife/</loc>
     
     <lastmod>2020-04-16</lastmod>
     
@@ -56,7 +65,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/archive/index.html</loc>
+    <loc>https://souffler.csie.org/archive/index.html</loc>
     
     <lastmod>2017-03-20</lastmod>
     
@@ -64,69 +73,60 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>http://yoursite-url/about/index.html</loc>
-    
-    <lastmod>2016-04-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
-    <loc>http://yoursite-url/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <loc>https://souffler.csie.org/</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://yoursite-url/tags/%E5%8F%B0%E5%A4%A7%E8%B3%87%E5%B7%A5/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <loc>https://souffler.csie.org/tags/%E5%8F%B0%E5%A4%A7%E8%B3%87%E5%B7%A5/</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/NTUCSIE/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <loc>https://souffler.csie.org/tags/NTUCSIE/</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/%E4%BF%AE%E8%AA%B2%E5%BF%83%E5%BE%97/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <loc>https://souffler.csie.org/tags/%E4%BF%AE%E8%AA%B2%E5%BF%83%E5%BE%97/</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/113-1/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <loc>https://souffler.csie.org/tags/113-1/</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/%E8%87%BA%E5%A4%A7%E8%B3%87%E5%B7%A5/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <loc>https://souffler.csie.org/tags/%E8%87%BA%E5%A4%A7%E8%B3%87%E5%B7%A5/</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <loc>https://souffler.csie.org/tags/113-2/</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/113-2/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <loc>https://souffler.csie.org/tags/Hexo-Theme-LiveMyLife/</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -134,15 +134,15 @@
 
   
   <url>
-    <loc>http://yoursite-url/categories/%E4%BF%AE%E8%AA%B2%E5%BF%83%E5%BE%97/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <loc>https://souffler.csie.org/categories/%E4%BF%AE%E8%AA%B2%E5%BF%83%E5%BE%97/</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/categories/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <loc>https://souffler.csie.org/categories/Hexo-Theme-LiveMyLife/</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
