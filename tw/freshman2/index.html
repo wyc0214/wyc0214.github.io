@@ -189,6 +189,20 @@
   }
   .spoiler:hover { background-color: transparent; }
 </style>
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head>
 
 
@@ -288,30 +302,6 @@
 
           
           
-          
-          
-          <li>
-            <a href="/archive/">
-              
-              歸檔
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
-            <a href="/about/">
-              
-              關於
-              
-              
-            </a>
-          </li>
-          
-          
-          
           <li>
             <a href="/tags/">
               
@@ -327,6 +317,30 @@
             <a href="/categories/">
               
               分類
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li>
+            <a href="/about/">
+              
+              關於
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/archive/">
+              
+              歸檔
               
               
             </a>
