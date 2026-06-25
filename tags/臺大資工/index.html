@@ -190,6 +190,13 @@
   .hackmd-danger { background-color: var(--alert-danger-bg) !important; color: var(--alert-danger-text) !important; border-color: var(--alert-danger-text) !important; }
   .hackmd-success { background-color: var(--alert-success-bg) !important; color: var(--alert-success-text) !important; border-color: var(--alert-success-text) !important; }
 
+  .intro-header h1,
+  .intro-header .subheading,
+  .intro-header .meta,
+  .intro-header .post-meta {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.6);
+  }
+
   .spoiler {
     background-color: currentColor;
     border-radius: 3px;
@@ -325,9 +332,9 @@
           
           
           <li>
-            <a href="/categories/">
+            <a href="/archive/">
               
-              CATEGORIES
+              ARCHIVES
               
               
             </a>
@@ -336,9 +343,9 @@
           
           
           <li>
-            <a href="/archive/">
+            <a href="/categories/">
               
-              ARCHIVES
+              CATEGORIES
               
               
             </a>
@@ -415,12 +422,12 @@
     .body--light {
       /* intro-header */
       --intro-header-background-image-url-home: url('/img/header_img/newhome_bg.jpg');
-      --intro-header-background-image-url-post: url('');
+      --intro-header-background-image-url-post: url('/');
       --intro-header-background-image-url-page: url('/img/header_img/archive_bg2.jpg');
     }
     .body--dark {
       --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/newhome_bg.jpg');
-      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('/');
       --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/archive_bg2.jpg');
     }
 
@@ -627,11 +634,11 @@
     
     
     
-    <a href="/tags/#113-2" title="113-2" rel="1">113-2</a>
-    
-    
-    
     <a href="/tags/#114-1" title="114-1" rel="1">114-1</a>
+    
+    
+    
+    <a href="/tags/#113-2" title="113-2" rel="1">113-2</a>
     
     
   </div>

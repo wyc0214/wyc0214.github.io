@@ -190,6 +190,13 @@
   .hackmd-danger { background-color: var(--alert-danger-bg) !important; color: var(--alert-danger-text) !important; border-color: var(--alert-danger-text) !important; }
   .hackmd-success { background-color: var(--alert-success-bg) !important; color: var(--alert-success-text) !important; border-color: var(--alert-success-text) !important; }
 
+  .intro-header h1,
+  .intro-header .subheading,
+  .intro-header .meta,
+  .intro-header .post-meta {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.6);
+  }
+
   .spoiler {
     background-color: currentColor;
     border-radius: 3px;
@@ -325,9 +332,9 @@
           
           
           <li>
-            <a href="/categories/">
+            <a href="/archive/">
               
-              CATEGORIES
+              ARCHIVES
               
               
             </a>
@@ -336,9 +343,9 @@
           
           
           <li>
-            <a href="/archive/">
+            <a href="/categories/">
               
-              ARCHIVES
+              CATEGORIES
               
               
             </a>
@@ -415,12 +422,12 @@
     .body--light {
       /* intro-header */
       --intro-header-background-image-url-home: url('/img/header_img/newhome_bg.jpg');
-      --intro-header-background-image-url-post: url('img/header_img/categories_bg.jpg');
+      --intro-header-background-image-url-post: url('/img/header_img/categories_bg.jpg');
       --intro-header-background-image-url-page: url('/img/header_img/categories_bg.jpg');
     }
     .body--dark {
       --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/newhome_bg.jpg');
-      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('img/header_img/categories_bg.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('/img/header_img/categories_bg.jpg');
       --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/categories_bg.jpg');
     }
 
@@ -538,9 +545,9 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
         <div class="post-preview">
-          <a href="/tw/freshman2/">
+          <a href="/tw/sophomore1/">
             <h2 class="post-title">
-              臺大資工大一下修課心得
+              臺大資工大二上修課心得
               
               -- tw
               
@@ -556,9 +563,9 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
         <div class="post-preview">
-          <a href="/tw/sophomore1/">
+          <a href="/tw/freshman2/">
             <h2 class="post-title">
-              臺大資工大二上修課心得
+              臺大資工大一下修課心得
               
               -- tw
               
